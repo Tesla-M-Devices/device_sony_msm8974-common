@@ -34,6 +34,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
+# Boringssl-compat
+PRODUCT_PACKAGES += \
+    libboringssl-compat
+
 # Compatibility with older blobs
 PRODUCT_PACKAGES += \
     libstlport
