@@ -129,7 +129,8 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    librmnetctl
+    librmnetctl \
+    libxml2
 
 # Thermal management
 PRODUCT_PACKAGES += \
