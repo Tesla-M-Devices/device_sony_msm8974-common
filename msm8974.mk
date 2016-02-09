@@ -34,9 +34,24 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
+<<<<<<< HEAD
 # Boringssl-compat
 PRODUCT_PACKAGES += \
     libboringssl-compat
+=======
+# Camera
+PRODUCT_PACKAGES += \
+    camera.msm8974 \
+    libmmcamera_interface \
+    libmmjpeg_interface \
+    libmm-qcamera \
+    libqomx_core
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    camera.disable_zsl_mode=0 \
+    persist.camera.HAL3.enabled=1 \
+    persist.camera.ois.disable=0
+>>>>>>> 1b863fc... Build and use Sony camera HAL
 
 # Compatibility with older blobs
 PRODUCT_PACKAGES += \
