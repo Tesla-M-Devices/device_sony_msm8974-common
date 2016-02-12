@@ -51,10 +51,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     libboringssl-compat
 
-# Compatibility with older blobs
-PRODUCT_PACKAGES += \
-    libstlport
-
 # Display
 PRODUCT_PACKAGES += \
     hwcomposer.msm8974 \
@@ -148,11 +144,6 @@ PRODUCT_PACKAGES += \
 # Thermal management
 PRODUCT_PACKAGES += \
     thermanager
-
-# Time
-PRODUCT_PACKAGES += \
-    timekeep \
-    TimeKeep
 
 # USB OTG
 PRODUCT_PROPERTY_OVERRIDES += \
