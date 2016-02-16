@@ -34,11 +34,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
-<<<<<<< HEAD
-# Boringssl-compat
-PRODUCT_PACKAGES += \
-    libboringssl-compat
-=======
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8974 \
@@ -51,7 +46,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     camera.disable_zsl_mode=0 \
     persist.camera.HAL3.enabled=1 \
     persist.camera.ois.disable=0
->>>>>>> 1b863fc... Build and use Sony camera HAL
+
+# Boringssl-compat
+PRODUCT_PACKAGES += \
+    libboringssl-compat
 
 # Compatibility with older blobs
 PRODUCT_PACKAGES += \
